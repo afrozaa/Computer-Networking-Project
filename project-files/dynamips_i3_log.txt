@@ -1,0 +1,55 @@
+Nov 23 21:38:13.945 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 23 21:38:13.946 HYPERVISOR: Started on IP = localhost, TCP port = 60303.
+Nov 23 21:38:14.458 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 23 21:38:14.462 HYPERVISOR: exec_cmd: hypervisor working_dir G:\GNS3\ALL LAB\Final Project\project-files\dynamips 
+Nov 23 21:38:14.462 GENERAL: working_dir=G:\GNS3\ALL LAB\Final Project\project-files\dynamips
+Nov 23 21:38:14.462 HYPERVISOR: exec_cmd: hypervisor working_dir G:\GNS3\ALL LAB\Final Project\project-files\dynamips\e171f504-569a-48b0-a5b7-53686ae1e52a 
+Nov 23 21:38:14.462 GENERAL: working_dir=G:\GNS3\ALL LAB\Final Project\project-files\dynamips\e171f504-569a-48b0-a5b7-53686ae1e52a
+Nov 23 21:38:14.463 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Nov 23 21:38:14.464 VM: VM R3 created.
+Nov 23 21:38:14.465 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Nov 23 21:38:14.465 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Nov 23 21:38:14.465 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 23 21:38:14.465 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Nov 23 21:38:14.466 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Afroza/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.bin 
+Nov 23 21:38:14.467 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Nov 23 21:38:14.468 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Nov 23 21:38:14.468 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Nov 23 21:38:14.469 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Nov 23 21:38:14.470 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 23 21:38:14.470 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-8E 
+Nov 23 21:38:14.470 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 23 21:38:14.470 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 PA-4T+ 
+Nov 23 21:38:14.471 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 23 21:38:14.471 HYPERVISOR: exec_cmd: vm slot_add_binding R3 3 0 PA-FE-TX 
+Nov 23 21:38:14.541 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Afroza/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.bin 
+Nov 23 21:38:19.849 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Afroza/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.bin 
+Nov 23 21:40:42.109 HYPERVISOR: exec_cmd: nio create_udp udp-0abed66a-73d7-4e27-bbb5-24fd4cedd045 10012 127.0.0.1 10013 
+Nov 23 21:40:42.369 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-0abed66a-73d7-4e27-bbb5-24fd4cedd045 
+Nov 23 21:40:42.370 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 23 21:41:06.046 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 23 21:41:06.047 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 0 
+Nov 23 21:41:06.048 HYPERVISOR: exec_cmd: nio delete udp-0abed66a-73d7-4e27-bbb5-24fd4cedd045 
+Nov 23 21:41:26.056 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 23 21:41:26.056 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 1 0 
+Nov 23 21:41:26.056 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 23 21:41:26.056 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-FE-TX 
+Nov 23 21:41:33.804 HYPERVISOR: exec_cmd: nio create_udp udp-6efeea8d-4dd3-439f-97d6-4a9edc4c56a4 10012 127.0.0.1 10013 
+Nov 23 21:41:33.806 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-6efeea8d-4dd3-439f-97d6-4a9edc4c56a4 
+Nov 23 21:41:33.806 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 23 21:41:37.456 HYPERVISOR: exec_cmd: nio create_udp udp-d0ed88f8-29a0-42c8-b90a-e8dc37306704 10018 127.0.0.1 10019 
+Nov 23 21:41:37.458 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-d0ed88f8-29a0-42c8-b90a-e8dc37306704 
+Nov 23 21:41:37.458 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 23 21:43:48.161 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 23 21:43:48.161 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 1 0 
+Nov 23 21:43:48.162 HYPERVISOR: exec_cmd: nio delete udp-6efeea8d-4dd3-439f-97d6-4a9edc4c56a4 
+Nov 23 21:43:50.626 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 23 21:43:50.626 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 0 
+Nov 23 21:43:50.627 HYPERVISOR: exec_cmd: nio delete udp-d0ed88f8-29a0-42c8-b90a-e8dc37306704 
+Nov 23 21:44:20.048 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 23 21:44:20.049 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 23 21:44:20.050 HYPERVISOR: exec_cmd: vm delete R3 
+Nov 23 21:44:20.050 VM: VM R3 destroyed.
+Nov 23 21:44:20.051 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 23 21:44:20.147 HYPERVISOR: Stopped.
+Nov 23 21:44:20.147 GENERAL: reset done.
